@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-cnm-Hans">
+
+<head>
+    <!-- 配置 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS -->
+    <script src="/static/js/global.js?2020-08-27T14"></script>
+    <script src="/static/js/reload-img.js?2020-08-27T14"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/global.css?2020-08-27T14">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .main {
+            margin: 56px auto;
+        }
+
+        .main-tips {
+            margin: 0;
+            padding: 0.75rem calc(50% - 184px);
+            width: 368px;
+
+            background-color: #fef7e0;
+        }
+
+        @media screen and (max-width: 432px) {
+            .main-tips {
+                box-sizing: border-box;
+                padding: 0.75rem 16px;
+                width: 100%;
+            }
+        }
+
+        /* List Start */
+        .main-list {
+            list-style: none;
+
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 400px;
+        }
+
+        .main-list>li:hover {
+            background-color: #f5f5f5;
+        }
+
+        .main-list>li:active {
+            background-color: #c7c7c7;
+        }
+
+        .main-list>li>a {
+            display: block;
+
+            box-sizing: border-box;
+            padding: 8px 16px;
+            width: 100%;
+            height: 56px;
+
+            text-decoration: none;
+
+            color: black;
+        }
+
+        .main-list>li>a:hover {
+            text-decoration: none;
+
+            color: black;
+        }
+
+        .main-list>li>a>img {
+            margin: 0 16px 0 0;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+
+            vertical-align: middle;
+        }
+
+        .main-list>li>a>div {
+            display: inline-block;
+
+            max-width: calc(100% - 72px);
+            height: 40px;
+
+            vertical-align: middle;
+        }
+
+
+        .main-list>li>a>div>.name {
+            line-height: 20px;
+        }
+
+        .main-list>li>a>div>.intro {
+            width: 100%;
+            height: 20px;
+
+            text-overflow: ellipsis;
+            font-size: 14px;
+            line-height: 20px;
+            white-space: nowrap;
+
+            color: gray;
+
+            overflow: hidden;
+        }
+
+        /* List End */
+
+
+    </style>
+    <!-- 网站说明 -->
+    <meta name="keywords" content="607,607班同学网,607班网,607班,class 607,class607">
+    <meta name="description" content="这里是607班同学网。此网站仅限607班同学进入，除特殊说明外，闲人免进。">
+    <link rel="icon" href="/img/master/logo.png">
+    <title>同学录</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar-title">
+            <span class="topbar-title-text">同学录</span>
+        </div>
+        <div class="topbar-buttonlist">
+            <a style="float: right;" class="topbar-button" onclick="reloadImg();"  title="刷新图片">
+                <img src="/img/svg/refresh-gray.svg">
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-tips">
+            站长已停止对607班同学网的技术支持
+        </div>
+        <ul class="main-list">
+            <li>
+                <a href="user?id=0">
+                    <img src="/img/txl/avatar/0.png">
+                    <div>
+                        <div class="name">吴老师</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=1">
+                    <img src="/img/txl/avatar/1.png">
+                    <div>
+                        <div class="name">陈乐妍</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=2">
+                    <img src="/img/txl/avatar/2.png">
+                    <div>
+                        <div class="name">陈若潇</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=3">
+                    <img src="/img/txl/avatar/3.png">
+                    <div>
+                        <div class="name">陈雅慧</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=4">
+                    <img src="/img/txl/avatar/4.png">
+                    <div>
+                        <div class="name">程语馨</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=5">
+                    <img src="/img/txl/avatar/5.png">
+                    <div>
+                        <div class="name">冯家沛</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=6">
+                    <img src="/img/txl/avatar/6.png">
+                    <div>
+                        <div class="name">冯思博</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=7">
+                    <img src="/img/txl/avatar/7.png">
+                    <div>
+                        <div class="name">关钰城</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=8">
+                    <img src="/img/txl/avatar/8.png">
+                    <div>
+                        <div class="name">郭籽程</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=9">
+                    <img src="/img/txl/avatar/9.png">
+                    <div>
+                        <div class="name">何豪然</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=10">
+                    <img src="/img/txl/avatar/10.png">
+                    <div>
+                        <div class="name">何惠琪</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=11">
+                    <img src="/img/txl/avatar/11.png">
+                    <div>
+                        <div class="name">何俊熙</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=12">
+                    <img src="/img/txl/avatar/12.png">
+                    <div>
+                        <div class="name">何烨恒</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=13">
+                    <img src="/img/txl/avatar/13.png">
+                    <div>
+                        <div class="name">何政衡</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=14">
+                    <img src="/img/txl/avatar/14.png">
+                    <div>
+                        <div class="name">黄力</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=15">
+                    <img src="/img/txl/avatar/15.png">
+                    <div>
+                        <div class="name">黄帅</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=16">
+                    <img src="/img/txl/avatar/16.png">
+                    <div>
+                        <div class="name">黄玉华</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=17">
+                    <img src="/img/txl/avatar/17.png">
+                    <div>
+                        <div class="name">蓝宇航</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=18">
+                    <img src="/img/txl/avatar/18.png">
+                    <div>
+                        <div class="name">黎熙乐</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=19">
+                    <img src="/img/txl/avatar/19.png">
+                    <div>
+                        <div class="name">李柏凝</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=20">
+                    <img src="/img/txl/avatar/20.png">
+                    <div>
+                        <div class="name">廖锦彬</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=21">
+                    <img src="/img/txl/avatar/21.png">
+                    <div>
+                        <div class="name">林泳宁</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=22">
+                    <img src="/img/txl/avatar/22.png">
+                    <div>
+                        <div class="name">林韵怡</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=23">
+                    <img src="/img/txl/avatar/23.png">
+                    <div>
+                        <div class="name">林紫彤</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=24">
+                    <img src="/img/txl/avatar/24.png">
+                    <div>
+                        <div class="name">刘宸彧</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=25">
+                    <img src="/img/txl/avatar/25.png">
+                    <div>
+                        <div class="name">刘鹏飞</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=26">
+                    <img src="/img/txl/avatar/26.png">
+                    <div>
+                        <div class="name">刘谦</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=27">
+                    <img src="/img/txl/avatar/27.png">
+                    <div>
+                        <div class="name">刘芮宁</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=28">
+                    <img src="/img/txl/avatar/28.png">
+                    <div>
+                        <div class="name">刘昔洛</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=29">
+                    <img src="/img/txl/avatar/29.png">
+                    <div>
+                        <div class="name">罗建宇</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=30">
+                    <img src="/img/txl/avatar/30.png">
+                    <div>
+                        <div class="name">罗臻美</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=31">
+                    <img src="/img/txl/avatar/31.png">
+                    <div>
+                        <div class="name">罗梓蓁</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=32">
+                    <img src="/img/txl/avatar/32.png">
+                    <div>
+                        <div class="name">王晓歌</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=33">
+                    <img src="/img/txl/avatar/33.png">
+                    <div>
+                        <div class="name">王振韬</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=34">
+                    <img src="/img/txl/avatar/34.png">
+                    <div>
+                        <div class="name">吴文俊</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=35">
+                    <img src="/img/txl/avatar/35.png">
+                    <div>
+                        <div class="name">冼晋贤</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=36">
+                    <img src="/img/txl/avatar/36.png">
+                    <div>
+                        <div class="name">谢稳尊</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=37">
+                    <img src="/img/txl/avatar/37.png">
+                    <div>
+                        <div class="name">杨昊熹</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=38">
+                    <img src="/img/txl/avatar/38.png">
+                    <div>
+                        <div class="name">杨家乐</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=39">
+                    <img src="/img/txl/avatar/39.png">
+                    <div>
+                        <div class="name">姚鼎蒋</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=40">
+                    <img src="/img/txl/avatar/40.png">
+                    <div>
+                        <div class="name">姚鹏</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=41">
+                    <img src="/img/txl/avatar/41.png">
+                    <div>
+                        <div class="name">叶栩嘉</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=42">
+                    <img src="/img/txl/avatar/42.png">
+                    <div>
+                        <div class="name">余樾</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=43">
+                    <img src="/img/txl/avatar/43.png">
+                    <div>
+                        <div class="name">余紫玥</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=44">
+                    <img src="/img/txl/avatar/44.png">
+                    <div>
+                        <div class="name">袁洛婷</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=45">
+                    <img src="/img/txl/avatar/45.png">
+                    <div>
+                        <div class="name">曾若杰</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=46">
+                    <img src="/img/txl/avatar/46.png">
+                    <div>
+                        <div class="name">张楚宜</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=47">
+                    <img src="/img/txl/avatar/47.png">
+                    <div>
+                        <div class="name">张诗榕</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=48">
+                    <img src="/img/txl/avatar/48.png">
+                    <div>
+                        <div class="name">张宇轩</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=49">
+                    <img src="/img/txl/avatar/49.png">
+                    <div>
+                        <div class="name">张梓霖</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="user?id=50">
+                    <img src="/img/txl/avatar/50.png">
+                    <div>
+                        <div class="name">周楹焯</div>
+                        <div class="intro"></div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </main>
+    <footer class="bottombar">
+        <a href="../txl/" class="now">
+            <img src="/img/svg/txl-dodgerblue.svg">
+            <div>同学录</div>
+        </a><a href="../photos/">
+            <img src="/img/svg/photos-gray.svg">
+            <div>照片库</div>
+        </a><a href="../docs/">
+            <img src="/img/svg/docs-gray.svg">
+            <div>文档</div>
+        </a>
+    </footer>
+    <script src="static/js/data.js"></script>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState == "interactive") {
+                var introObjArray = document.querySelectorAll(".intro");
+                for (i = 0; i <= 50; i++) {
+                    introObjArray[i].innerHTML = allData[i]["attri"]["intro"];
+                    introObjArray[i].title = allData[i]["attri"]["intro"];
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

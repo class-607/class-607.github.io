@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    width: auto;
+    height: auto;
+
+    background-color: white;
+}
+
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.page-loading-box {
+    text-align: center;
+}
+
+.site-master-comment {
+    color: gray;
+    font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 632px) {
+    .tips {
+        box-sizing: border-box;
+        padding: 0.75rem 16px;
+        width: 100%;
+    }
+}
+
+.main {
+    margin-top: 56px;
+}
+
+.main-tips {
+    padding: 0.75rem calc(50% - 284px);
+    width: 568px;
+    overflow: hidden;
+
+    background-color: #fef7e0;
+}
+
+.main-content {
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 600px;
+}
+
+
+
+/* .main-content a:hover {
+    text-decoration: underline;
+}
+ */
+
+.main-content-title {
+    width: auto;
+    margin: auto;
+
+    text-align: center;
+}
+
+.main-content-title-img {
+    height: auto;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin: auto 0;
+    width: 30%;
+
+    text-align: center;
+}
+
+.main-content-title-name {
+    font-weight: normal;
+}
+
+.main-content-title-sert-icon {
+    font-weight: 900;
+}
+
+.main-content-title-intro {
+    color: gray;
+}
+
+/* 
+.main-content-list-li-title {
+    margin-right: 10px;
+}
+ */
+
+.main-content-attri-title {
+    font-weight: normal;
+}
+
+.main-content-attri-list {
+    list-style: none;
+}
+
+.main-content-contact-title {
+    font-weight: normal;
+}
+
+.main-content-contact-list {
+    list-style: none;
+}
+
+.main-content-buttonlist {
+    max-width: 600px;
+    margin: 10px auto 0px;
+
+    text-align: center;
+}
+
+.b1:hover,
+.b2:hover,
+.b3:hover {
+    text-decoration: none;
+}

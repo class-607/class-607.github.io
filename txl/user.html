@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cnm-Hans">
+
+<head>
+    <!-- 配置 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/global.css?2020-08-27T14">
+    <link rel="stylesheet" href="static/css/txl-user.css?2020-08-27T14">
+    <style></style>
+    <!-- 网站说明 -->
+    <meta name="keywords" content="607,607班同学网,607班网,607班,class 607,class607">
+    <meta name="description" content="这里是607班同学网。此网站仅限607班同学进入，除特殊说明外，闲人免进。">
+    <link rel="icon" href="/img/master/logo.png">
+    <title></title>
+    <!-- JS -->
+    <script src="/static/js/reload-img.js?2020-08-27T14"></script>
+</head>
+
+<body>
+    <style>
+
+    </style>
+    <header class="topbar">
+        <a href="javascript:history.back(); setTimeout('location.href = `/txl/`;', 500);" class="topbar-back topbar-button">
+            <img src="/img/svg/back-gray.svg">
+        </a>
+        <div class="topbar-title">
+            <span class="topbar-title-text">同学录</span>
+        </div>
+        <div class="topbar-buttonlist">
+            <a style="float: right;" class="topbar-button" onclick="reloadImg();" title="刷新图片">
+                <img src="/img/svg/refresh-gray.svg">
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-tips" id="prompt">
+            <div class="page-loading-box">
+                <progress class="page-loading"></progress><br>
+            </div>
+            <noscript>
+                浏览器不支持JavaScript，请使用
+                <a href="https://google.cn/chrome/">Google Chrome（谷歌浏览器）</a>
+            </noscript>
+        </div>
+        <div class="main-content">
+            <div class="main-content-title">
+                <a href="" id="avatarLink" class="main-content-title-img-link">
+                    <img src="" class="main-content-title-img" alt="头像" id="avatar">
+                </a>
+                <h2 class="main-content-title-name" id="name"></h2>
+                <p class="main-content-title-sert" id="sert"></p>
+                <p class="main-content-title-intro" id="intro"></p>
+            </div>
+            <div class="">
+                <div class="main-content-attri">
+                    <h3 class="main-content-attri-title">属性</h3>
+                    <ul class="main-content-attri-list">
+                        <li>
+                            <span class="main-content-list-li-title">学号：</span>
+                            <span id="id"></span>
+                        </li>
+                        <li>
+                            <span class="main-content-list-li-title">爱好：</span>
+                            <span id="hobby"></span>
+                        </li>
+                        <li>
+                            <span class="main-content-list-li-title">梦想：</span>
+                            <span id="dream"></span>
+                        </li>
+                        <li>
+                            <span class="main-content-list-li-title">生日：</span>
+                            <span id="birthday"></span>
+                        </li>
+                        <li>
+                            <span class="main-content-list-li-title">职务：</span>
+                            <span id="job"></span>
+                        </li>
+                        <li>
+                            <span class="main-content-list-li-title">留言：</span>
+                            <span id="message"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-content-contact">
+                    <h3 class="main-content-contact-title">联系方式</h3>
+                    <ul class="main-content-contact-list">
+                        <li>
+                            <span class="main-content-list-li-title">电话：</span>
+                            <span id="tel"></span>
+                        </li>
+                        <li>
+                            <span class="main-content-list-li-title">微信：</span>
+                            <span id="wechat"></span>
+                        </li>
+                        <li>
+                            <span class="main-content-list-li-title">QQ：</span>
+                            <span id="qq"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="footer-linklist">
+            <a href="/docs/contact.html">联系站长</a>
+            <a href="/docs/zanshang.html">赞赏</a>
+            <a href="/docs/help.html">帮助</a>
+        </nav>
+        <div class="footer-other">
+            <span>© 2020 607班同学网</span>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="static/js/data.js"></script>
+    <script src="static/js/get-data.js?2020-08-27T14"></script>
+</body>
+
+</html>
